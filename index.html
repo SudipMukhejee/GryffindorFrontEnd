@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+  <div class="bg-white dark:bg-black">
+    
+<nav class="content sticky top-0 px-28  bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="#" class="flex items-center">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-full md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block mt-2 py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex mt-2 py-2 px-4 items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                  </div>
+              </div>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex mt-2 py-2 px-4 items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex mt-2 py-2 px-4 items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex mt-2 py-2 px-4 items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex mt-2 py-2 px-4 items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                </div>
+            </div>
+        </li>         
+          <li>
+            <button class="block py-2 pl-3 pr-4 bg-blue-500 hover:bg-blue-700 text-white font-bold  rounded-full">
+                Button
+              </button>
+          </li>
+          <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center justify-center px-4 py-2 text-sm text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+            <svg class="w-5 h-5 mr-2 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
+            English (US)
+          </button>
+          <!-- Dropdown -->
+          <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
+            <ul class="py-2" role="none">
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                    English (US)
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                    Deutsch
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                    Italiano
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
+                    中文 (繁體)
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button data-collapse-toggle="mobile-menu-language-select" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-language-select" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <main>
+    
+
+        <section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
+          <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+              <video class="min-w-full min-h-full absolute object-cover" src="https://cuono.dev/video1.mp4" type="video/mp4" autoplay muted  loop></video>
+          </div>
+          <div class="video-content space-y-2">
+            <form class=" h-auto" >
+      
+              <div class="sm:text-xs  text-center text-slate-100 pt-9 lg:text-3xl font-bold tracking-widest" >
+                BLOCKCHAIN MEETS
+              </div>
+              <div class=" sm:text-xs md:text-2xl text-center text-lime-400 pt-0 lg:text-5xl  font-bold tracking-widest">SUSTAINABILITY</div>
+              <div class=" text-center text-slate-100 pt-3">
+                5ireChain is a layer-1 EVM compatible smart contract platform that focuses on developing a <br> for-benefit blockchain ecosystem based on the Sustainable Development Goals (SDGs) <br> defined by the United Nations (UN)
+              </div>
+        
+              <!-- <form class="w-full max-w-sm "> -->
+                <div class="md:flex md:items-center mb-6 pt-9">
+                  <div class="md:w-52">
+                    <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                    
+                    </label>
+                  </div>
+                  <div class="md:w-2/3">
+                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="Enter Email @gmail.com">
+                  </div>
+                  <button class="flex-shrink-0 m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold  rounded-full py-1 px-3 rounded" type="button">
+                    Sign Up
+                  </button>
+                </div>
+                
+                <!-- </form> -->
+          </div>
+      </section>
+      
+  </main>
+ 
+  <div class="lg:px-4 max-w-md mx-auto bg-gray-900 shadow-md overflow-hidden md:max-w-2xl lg:max-w-full">
+    <div class="md:flex">
+
+      <div class="p-8">
+        <div class="lg:mx-32 uppercase tracking-wide text-3xl text-indigo-500 font-semibold">#BuildToEarn</div>
+        <a href="#" class="lg:mx-36 block mt-1 text-lg leading-tight font-medium text-white  sm:-mx-0">
+          <ol class="rounded">
+            <li>Top 10 dApps to receive an incentive after evaluation.</li>
+            <li>An opportunity to earn rewards through our referral program <br>and grants scheme.</li>
+            <li>An incentivization scheme for dApps focused on sustainable<br> development.</li>
+            <li>Reduced gas fees for early adopters and the first<br> 500 builders to receive a share of block rewards.</li>
+          </ol>
+        </a>
+        <!-- <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p> -->
+      </div>
+      <div class="md:shrink-0">
+        <img class="lg:mr-24 lg:px-9 lg:w-96 lg:mt-4 h-60 w-full object-cover md:h-full md:w-48 " src="data:image/jpeg;base64,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" alt="Modern building architecture">
+      </div>
+    </div>
+  </div>
+ <main>
+  <div class="delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,200px,0)] taos:opacity-0" data-taos-offset="300"><div></div>
+  <div class="lg:px-4 max-w-md mx-auto bg-gray-900 shadow-md overflow-hidden md:max-w-2xl lg:max-w-full">
+    <div class="md:flex">
+
+      <div class="p-8">
+        <div class="lg:mx-32 uppercase tracking-wide text-cyan-600 text-3xl text-indigo-500 font-semibold">We’re a sustainability driven blockchain with reputation-based mechanisms.</div>
+        <a href="#" class="lg:mx-36 block mt-1 text-lg leading-tight font-medium text-white  sm:-mx-0">
+          In the near future, we aim to become an ecosystem focusing on positive impact.
+
+We also aim on making blockchain sustainable & accessible for
+        </a>
+        <!-- <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p> -->
+      </div>
+      <div class="md:shrink-0">
+        <img class="lg:mr-24 lg:px-9 lg:w-96 lg:mt-4 h-60 w-full object-cover md:h-full md:w-48 " src="https://assets.website-files.com/6217c768b8b19637dc690fd8/63e8fe0bf16d3f7080aec1b9_flow%202.svg" alt="Modern building architecture">
+      </div>
+    </div>
+  </div>
+ 
+ </main> -->
+ 
+</body>
+</html>
