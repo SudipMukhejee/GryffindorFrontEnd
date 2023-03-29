@@ -1,0 +1,29 @@
+ .con{
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: linear-gradient(to right, #000060,#000040);
+ }
+ .left-text{
+  flex-basis: 30%;
+
+ }
+ .heading{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+ }
+ .subheading{
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+ }
+ .right-text{
+    flex-basis: 50%;
+ }
+ .content{
+   z-index: 3;
+ }
